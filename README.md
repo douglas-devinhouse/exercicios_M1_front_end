@@ -1,3 +1,3 @@
 # Exercicios-Lista-Completa
 
-Aqui serão postados os exercícios do módulo 1
+Aqui serão postados os exercícios do módulo 1 Front-End
