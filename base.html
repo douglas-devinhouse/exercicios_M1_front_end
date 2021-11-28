@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Drop Down Sidebar Menu | CodingLab </title>-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <i class='bx bx-menu'></i>
+      <span class="logo_name">DevInHouse</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="index.html">
+          <i class='bx bx-home' ></i>
+          <span class="link_name">Home</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="index">Home</a></li>
+        </ul>
+      </li> 
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-collection' ></i>
+            <span class="link_name">Módulos</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Módulos</a></li>
+          <li><a href="#">Front-end</a></li>
+          <li><a href="#">Back-end</a></li>
+          <li><a href="#">DevOps</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Exercícios Front-end</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name unlink" href="#">Exercícios Front-end</a></li>
+          <li><a href="m1s01.html">Semana 1</a></li>
+          <li><a href="m1s02.html">Semana 2</a></li>
+          <li><a href="m1s03.html">Semana 3</a></li>
+          <li><a href="m1s04.html">Semana 4</a></li>
+          <li><a href="m1s05.html">Semana 5</a></li>
+          <li><a href="m1s06.html">Semana 6</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <div class="profile-details">
+          <div class="profile-content">
+            <img src="img/profile.jpg" alt="profileImg">
+          </div>
+          <div class="name-job">
+            <div class="profile_name">Douglas Maicon</div>
+            <div class="job">Full Stack Developer</div>
+          </div>            
+          
+          <div class="profile-links">
+            <a href="https://www.linkedin.com/in/douglas-maicon-2b464157/">
+              <i class='bx bxl-linkedin-square' ></i>
+            </a>
+  
+            <a href="https://github.com/douglas-evinhouse">
+              <i class='bx bxl-github' ></i>
+            </a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <section class="home-section">
+    <!-- <div class="home-content">            
+      <span class="text">Exercícios da semana </span>
+    </div> -->
+
+    <div class="cabecalho-principal">
+      <h1>Exercícios da semana</h1>
+    </div>
+
+  </section>
+
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+</body>
+</html>
