@@ -1,239 +1,141 @@
 <!DOCTYPE html>
-<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
 <html lang="pt-br" dir="ltr">
   <head>
     <meta charset="UTF-8">
-    <!--<title> Drop Down Sidebar Menu | CodingLab </title>-->
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
 <body onload="initialize()">
-  <div class="sidebar close">
-    <div class="logo-details">
-      <i class='bx bx-menu'></i>
-      <span class="logo_name">DevInHouse</span>
-    </div>
-    <ul class="nav-links">
-      <li>
-        <a href="index.html">
-          <i class='bx bx-home' ></i>
-          <span class="link_name">Home</span>
-        </a>
-        <ul class="sub-menu blank">
-          <li><a class="link_name" href="index">Home</a></li>
-        </ul>
-      </li> 
-      <li>
-        <div class="iocn-link">
-          <a href="#">
-            <i class='bx bx-collection' ></i>
-            <span class="link_name">Módulos</span>
-          </a>
-          <i class='bx bxs-chevron-down arrow' ></i>
-        </div>
-        <ul class="sub-menu">
-          <li><a class="link_name" href="#">Módulos</a></li>
-          <li><a href="#">Front-end</a></li>
-          <li><a href="#">Back-end</a></li>
-          <li><a href="#">DevOps</a></li>
-        </ul>
-      </li>
-      <li>
-        <div class="iocn-link">
-          <a href="#">
-            <i class='bx bx-book-alt' ></i>
-            <span class="link_name">Exercícios Front-end</span>
-          </a>
-          <i class='bx bxs-chevron-down arrow' ></i>
-        </div>
-        <ul class="sub-menu">
-          <li><a class="link_name unlink" href="#">Exercícios Front-end</a></li>
-          <li><a href="m1s01.html">Semana 1</a></li>
-          <li><a href="m1s02.html">Semana 2</a></li>
-          <li><a href="m1s03.html">Semana 3</a></li>          
-          <li><a href="m1s05.html">Semana 5</a></li>
-          <li><a href="m1s06.html">Semana 6</a></li>
-        </ul>
-      </li>
-
-      <li>
-        <div class="profile-details">
-          <div class="profile-content">
-            <img src="img/profile.jpg" alt="profileImg">
-          </div>
-          <div class="name-job">
-            <div class="profile_name">Douglas Maicon</div>
-            <div class="job">Full Stack Developer</div>
-          </div>            
-          
-          <div class="profile-links">
-            <a href="https://www.linkedin.com/in/douglas-maicon-2b464157/">
-              <i class='bx bxl-linkedin-square' ></i>
-            </a>
-  
-            <a href="https://github.com/douglas-evinhouse">
-              <i class='bx bxl-github' ></i>
-            </a>
-          </div>
-        </div>
-      </li>
-    </ul>
+  <div class="cabecalho-principal">
+    <h1>Exercícios da semana 03 - Módulo 1 - Front-end</h1>
   </div>
-  <section class="home-section">
-    <!-- <div class="home-content">            
-      <span class="text">Exercícios da semana </span>
-    </div> -->
 
-    <div class="cabecalho-principal">
-      <h1>Exercícios da semana 03 - Módulo 1 - Front-end</h1>
-    </div>
-
-    <div class="exrc exrc-01">      
-      <div class="calc-idade">
-        <h2>Exercício 01</h2>
-        <div id="form-idade">
-            <div class="form-parts" id="birthDayDiv">
-                <label for="inputBirthDay">Data de nascimento</label><br>
-                <input type="date" name="inputBirthDay" id="inputBirthDay">
-                <button id="btnCalcIdade">Calcular</button>
-                
-                <i class="fas fa-exclamation-circle"></i>
-                <i class="fas fa-check-circle"></i>
-                <small>error mssg</small> 
-            </div>                  
-            
-        </div>            
-      </div>  
-    </div>    
-
-    <div class="exrc exrc-02">
-      <div class="form-parts calculadora" id="calculadora">
-        <h2>Exercício 02</h2>       
-        
-        <input type="number" class="input-num" id="input-num-1" placeholder="Nº 1">
-        <input type="number" class="input-num" id="input-num-2" placeholder="Nº 2">
-        
-        <div class="calc-btn">
-          <input type="button" value="+" id="calcSum">
-          <input type="button" value="-" id="calcSub">        
-          <input type="button" value="*" id="calcMult">
-          <input type="button" value="/" id="calcSplit">
-        </div>
-        <input type="number" name="result" id="result" readonly>
-      </div>
-    </div>
-
-    <div class="exrc exrc-03">
-      <div class="form-parts even-odd" id="divEvenOdd">
-        <h2>Exercício 03</h2>       
-        
-        <label for="input-even-odd">Informe um número</label>
-        <input type="number" class="input-num" id="inputEvenOdd" value="0">        
-        <p class="elementOddResult">O número é par</p>
-      </div>
-    </div>
-
-    <div class="exrc exrc-04">
-      <div class="form-parts time-access" id="timeAccess">
-        <h2>Exercício 04</h2>                
-        
-        <p class="elementTimeAccess">Hora de acesso: </p>
-      </div>
-    </div>
-
-    <div class="exrc exrc-05">
-      <div class="form-parts time-actual" id="timeActual">
-        <h2>Exercício 05</h2>                
-        
-        <p class="elementTimeActual">Hora atual: </p>
-      </div>
-    </div>
-
-    <div class="exrc exrc-06">
-      <div class="form-parts" id="season">
-        <h2>Exercício 06</h2>                
-        
-        <img id="elementSeason">
-        
-      </div>
-    </div>    
-
-    <div class="exrc exrc-07">
-      <div class="form-parts list-select" id="listSelect">
-        <h2>Exercício 07</h2>
-        
-        <div id="form-list">
-          <div class="form-parts" id="listSelectDiv">
-              <label for="inputList">Item a adicionar</label><br>
-              <input type="text" name="inputList" id="inputList">
-              <button id="btnAddList">Adicionar</button>              
+  <div class="exrc exrc-01">      
+    <div class="calc-idade">
+      <h2>Exercício 01</h2>
+      <div id="form-idade">
+          <div class="form-parts" id="birthDayDiv">
+              <label for="inputBirthDay">Data de nascimento</label><br>
+              <input type="date" name="inputBirthDay" id="inputBirthDay">
+              <button id="btnCalcIdade">Calcular</button>
+              
               <i class="fas fa-exclamation-circle"></i>
               <i class="fas fa-check-circle"></i>
               <small>error mssg</small> 
-              <br>
-              <select name="selectList" id="selectList">
+          </div>                  
+          
+      </div>            
+    </div>  
+  </div>    
 
-              </select>
-          </div>          
-        </div>            
+  <div class="exrc exrc-02">
+    <div class="form-parts calculadora" id="calculadora">
+      <h2>Exercício 02</h2>       
+      
+      <input type="number" class="input-num" id="input-num-1" placeholder="Nº 1">
+      <input type="number" class="input-num" id="input-num-2" placeholder="Nº 2">
+      
+      <div class="calc-btn">
+        <input type="button" value="+" id="calcSum">
+        <input type="button" value="-" id="calcSub">        
+        <input type="button" value="*" id="calcMult">
+        <input type="button" value="/" id="calcSplit">
       </div>
-    </div>    
-
-    <div class="exrc exrc-08">
-      <div class="form-parts" id="saveList">
-        <h2>Exercício 08</h2>
-        
-        <button id="btnSaveList">Salvar Lista</button>        
-      </div>
+      <input type="number" name="result" id="result" readonly>
     </div>
+  </div>
 
-    <div class="exrc exrc-09">
-      <div class="form-parts" id="loadList">
-        <h2>Exercício 09</h2>
-        
-        <p id="elementLoadList"></p>
-      </div>
+  <div class="exrc exrc-03">
+    <div class="form-parts even-odd" id="divEvenOdd">
+      <h2>Exercício 03</h2>       
+      
+      <label for="input-even-odd">Informe um número</label>
+      <input type="number" class="input-num" id="inputEvenOdd" value="0">        
+      <p class="elementOddResult">O número é par</p>
     </div>
+  </div>
 
-    <div class="exrc exrc-10">
-      <div class="form-parts" id="calcPAPG">
-        <h2>Exercício 10</h2>
-        <label for="inputPAPG-num">Valor Inicial</label><br>
-        <input type="number" class="inputPAPG-num" id="inputPAPGNum" placeholder="Inicial"><br>
-        <label for="inputPAPG-root">Razão</label><br>
-        <input type="number" class="inputPAPG-root" id="inputPAPGRoot" placeholder="Raiz">
-        <br>
-        <button id="btnPA">Calcular PA</button>
-        <button id="btnPG">Calcular PG</button>
-        <br>
-        <small>error mssg</small>
-        <p id="resultPA">PA:</p>
-        <p id="resultPG">PG:</p>
-      </div>
+  <div class="exrc exrc-04">
+    <div class="form-parts time-access" id="timeAccess">
+      <h2>Exercício 04</h2>                
+      
+      <p class="elementTimeAccess">Hora de acesso: </p>
     </div>
+  </div>
 
-  </section>
+  <div class="exrc exrc-05">
+    <div class="form-parts time-actual" id="timeActual">
+      <h2>Exercício 05</h2>                
+      
+      <p class="elementTimeActual">Hora atual: </p>
+    </div>
+  </div>
 
-  <script>
-  let arrow = document.querySelectorAll(".arrow");
-  for (var i = 0; i < arrow.length; i++) {
-    arrow[i].addEventListener("click", (e)=>{
-   let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
-   arrowParent.classList.toggle("showMenu");
-    });
-  }
-  let sidebar = document.querySelector(".sidebar");
-  let sidebarBtn = document.querySelector(".bx-menu");  
-  sidebarBtn.addEventListener("click", ()=>{
-    sidebar.classList.toggle("close");
-  });
-  </script>
+  <div class="exrc exrc-06">
+    <div class="form-parts" id="season">
+      <h2>Exercício 06</h2>                
+      
+      <img id="elementSeason">
+      
+    </div>
+  </div>    
 
+  <div class="exrc exrc-07">
+    <div class="form-parts list-select" id="listSelect">
+      <h2>Exercício 07</h2>
+      
+      <div id="form-list">
+        <div class="form-parts" id="listSelectDiv">
+            <label for="inputList">Item a adicionar</label><br>
+            <input type="text" name="inputList" id="inputList">
+            <button id="btnAddList">Adicionar</button>              
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            <small>error mssg</small> 
+            <br>
+            <select name="selectList" id="selectList">
+
+            </select>
+        </div>          
+      </div>            
+    </div>
+  </div>    
+
+  <div class="exrc exrc-08">
+    <div class="form-parts" id="saveList">
+      <h2>Exercício 08</h2>
+      
+      <button id="btnSaveList">Salvar Lista</button>        
+    </div>
+  </div>
+
+  <div class="exrc exrc-09">
+    <div class="form-parts" id="loadList">
+      <h2>Exercício 09</h2>
+      
+      <p id="elementLoadList"></p>
+    </div>
+  </div>
+
+  <div class="exrc exrc-10">
+    <div class="form-parts" id="calcPAPG">
+      <h2>Exercício 10</h2>
+      <label for="inputPAPG-num">Valor Inicial</label><br>
+      <input type="number" class="inputPAPG-num" id="inputPAPGNum" placeholder="Inicial"><br>
+      <label for="inputPAPG-root">Razão</label><br>
+      <input type="number" class="inputPAPG-root" id="inputPAPGRoot" placeholder="Raiz">
+      <br>
+      <button id="btnPA">Calcular PA</button>
+      <button id="btnPG">Calcular PG</button>
+      <br>
+      <small>error mssg</small>
+      <p id="resultPA">PA:</p>
+      <p id="resultPG">PG:</p>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="js/m1s03.js"></script>
-  <!-- Boxiocns CDN Link -->
-  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-  <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
 
 </body>
 </html>

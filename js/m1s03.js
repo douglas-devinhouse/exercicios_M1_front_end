@@ -1,4 +1,4 @@
-/* scripts para o exercício 1*/
+    /* scripts para o exercício 1*/
 const birthDayDiv = document.getElementById("birthDayDiv");
 const inputBirthDay = document.getElementById("inputBirthDay");
 const btnCalcAge = document.getElementById("btnCalcAge");
