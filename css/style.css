@@ -348,7 +348,7 @@ input[type="button"]{
   width: 65px; 
 }
 
-.input-cpf{
+.input-cpf, .input-name{
   width: 100px;
 }
 
